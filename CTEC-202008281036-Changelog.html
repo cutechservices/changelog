@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-09-22 Tue 16:39 -->
+<!-- 2020-10-20 Tue 09:22 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Tech Services Changelog</title>
@@ -39,7 +39,7 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
+    overflow: auto;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -205,50 +205,26 @@
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/lib/js/jquery.stickytableheaders.min.js"></script>
 <style>#tabs {display:none !important;} #table-of-contents {display:none !important;} #minitoc {display: none !important;} #left-panel-wrapper {display:none !important;}</style>
 <script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
 </script>
 </head>
 <body>
@@ -258,33 +234,38 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgd69b5dc">Changes by Date</a>
+<li><a href="#orgbe68342">Changes by Date</a>
 <ul>
-<li><a href="#org16e2435">2020-09-22</a>
+<li><a href="#orgef836bd">2020-10-20</a>
 <ul>
-<li><a href="#org18f94b7">Website Header Changes</a></li>
-<li><a href="#org7156a4f">Ask Us Page Changes</a></li>
-<li><a href="#org9aa13af">Created Auto-Publishing Workflow for Changelog</a></li>
+<li><a href="#org2d1cacb">Library Systems Support Page Changes</a></li>
 </ul>
 </li>
-<li><a href="#org6bdc0a0">2020-09-17</a>
+<li><a href="#org22672b6">2020-09-22</a>
 <ul>
-<li><a href="#org997a3b2">Databases A to Z Changes</a></li>
-<li><a href="#org7efc219">LibCal Changes</a></li>
-<li><a href="#orgb5516cb">LibAnswers Changes</a></li>
+<li><a href="#org5b38a7d">Website Header Changes</a></li>
+<li><a href="#org0abebf8">Ask Us Page Changes</a></li>
+<li><a href="#org7a9ef0c">Created Auto-Publishing Workflow for Changelog</a></li>
 </ul>
 </li>
-<li><a href="#org7471f79">2020-08-31</a>
+<li><a href="#orgd9e54c6">2020-09-17</a>
 <ul>
-<li><a href="#org39aca3f">Databases A to Z Changes</a></li>
+<li><a href="#org77d56d0">Databases A to Z Changes</a></li>
+<li><a href="#orga32dc0b">LibCal Changes</a></li>
+<li><a href="#orgfe3e5c2">LibAnswers Changes</a></li>
 </ul>
 </li>
-<li><a href="#org0e53274">2020-08-28</a>
+<li><a href="#orge5b8ad6">2020-08-31</a>
 <ul>
-<li><a href="#org5306652">ILL to Article Request Service Changeover</a></li>
-<li><a href="#orgde3a7b9">APA Resources Removed</a></li>
-<li><a href="#orgb138039">Chat Tab Changes</a></li>
-<li><a href="#orge956bc6">Guest Sites</a></li>
+<li><a href="#org9dd8713">Databases A to Z Changes</a></li>
+</ul>
+</li>
+<li><a href="#orgf100ef3">2020-08-28</a>
+<ul>
+<li><a href="#org5f7f95d">ILL to Article Request Service Changeover</a></li>
+<li><a href="#org50bffb4">APA Resources Removed</a></li>
+<li><a href="#org8828df3">Chat Tab Changes</a></li>
+<li><a href="#org3c72bd2">Guest Sites</a></li>
 </ul>
 </li>
 </ul>
@@ -293,17 +274,33 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgd69b5dc" class="outline-2">
-<h2 id="orgd69b5dc">Changes by Date</h2>
-<div class="outline-text-2" id="text-orgd69b5dc">
+<div id="outline-container-orgbe68342" class="outline-2">
+<h2 id="orgbe68342">Changes by Date</h2>
+<div class="outline-text-2" id="text-orgbe68342">
 </div>
-<div id="outline-container-org16e2435" class="outline-3">
-<h3 id="org16e2435">2020-09-22</h3>
-<div class="outline-text-3" id="text-org16e2435">
+<div id="outline-container-orgef836bd" class="outline-3">
+<h3 id="orgef836bd">2020-10-20</h3>
+<div class="outline-text-3" id="text-orgef836bd">
 </div>
-<div id="outline-container-org18f94b7" class="outline-4">
-<h4 id="org18f94b7">Website Header Changes</h4>
-<div class="outline-text-4" id="text-org18f94b7">
+<div id="outline-container-org2d1cacb" class="outline-4">
+<h4 id="org2d1cacb">Library Systems Support Page Changes</h4>
+<div class="outline-text-4" id="text-org2d1cacb">
+<ul class="org-ul">
+<li>Page renamed from "Library Tech Support"</li>
+<li>Page re-organized for clarity</li>
+<li>New intake form created with mandatory contact fields</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org22672b6" class="outline-3">
+<h3 id="org22672b6">2020-09-22</h3>
+<div class="outline-text-3" id="text-org22672b6">
+</div>
+<div id="outline-container-org5b38a7d" class="outline-4">
+<h4 id="org5b38a7d">Website Header Changes</h4>
+<div class="outline-text-4" id="text-org5b38a7d">
 <ul class="org-ul">
 <li>A link to the libray's channel in Kaltura has been added to the headers of
 all library web pages</li>
@@ -311,9 +308,9 @@ all library web pages</li>
 </div>
 </div>
 
-<div id="outline-container-org7156a4f" class="outline-4">
-<h4 id="org7156a4f">Ask Us Page Changes</h4>
-<div class="outline-text-4" id="text-org7156a4f">
+<div id="outline-container-org0abebf8" class="outline-4">
+<h4 id="org0abebf8">Ask Us Page Changes</h4>
+<div class="outline-text-4" id="text-org0abebf8">
 <ul class="org-ul">
 <li>Campus drop-down updated to add San Antonio and New Orleans</li>
 <li>Campus list sorted alphabetically</li>
@@ -321,9 +318,9 @@ all library web pages</li>
 </div>
 </div>
 
-<div id="outline-container-org9aa13af" class="outline-4">
-<h4 id="org9aa13af">Created Auto-Publishing Workflow for Changelog</h4>
-<div class="outline-text-4" id="text-org9aa13af">
+<div id="outline-container-org7a9ef0c" class="outline-4">
+<h4 id="org7a9ef0c">Created Auto-Publishing Workflow for Changelog</h4>
+<div class="outline-text-4" id="text-org7a9ef0c">
 <ul class="org-ul">
 <li>Made the updates easier on myself :D</li>
 </ul>
@@ -331,13 +328,13 @@ all library web pages</li>
 </div>
 </div>
 
-<div id="outline-container-org6bdc0a0" class="outline-3">
-<h3 id="org6bdc0a0">2020-09-17</h3>
-<div class="outline-text-3" id="text-org6bdc0a0">
+<div id="outline-container-orgd9e54c6" class="outline-3">
+<h3 id="orgd9e54c6">2020-09-17</h3>
+<div class="outline-text-3" id="text-orgd9e54c6">
 </div>
-<div id="outline-container-org997a3b2" class="outline-4">
-<h4 id="org997a3b2">Databases A to Z Changes</h4>
-<div class="outline-text-4" id="text-org997a3b2">
+<div id="outline-container-org77d56d0" class="outline-4">
+<h4 id="org77d56d0">Databases A to Z Changes</h4>
+<div class="outline-text-4" id="text-org77d56d0">
 <ul class="org-ul">
 <li>On the morning of 9/16/2020, SpringShare accidentally deleted the
 library's entire Databases A to Z list. The database list was
@@ -348,9 +345,9 @@ report any unexpected changes to the system librarian.</li>
 </div>
 </div>
 
-<div id="outline-container-org7efc219" class="outline-4">
-<h4 id="org7efc219">LibCal Changes</h4>
-<div class="outline-text-4" id="text-org7efc219">
+<div id="outline-container-orga32dc0b" class="outline-4">
+<h4 id="orga32dc0b">LibCal Changes</h4>
+<div class="outline-text-4" id="text-orga32dc0b">
 <ul class="org-ul">
 <li>Each user's Outlook integrations were re-checked and verified;
 usernames were updated to the current scheme</li>
@@ -360,9 +357,9 @@ usernames were updated to the current scheme</li>
 </div>
 </div>
 
-<div id="outline-container-orgb5516cb" class="outline-4">
-<h4 id="orgb5516cb">LibAnswers Changes</h4>
-<div class="outline-text-4" id="text-orgb5516cb">
+<div id="outline-container-orgfe3e5c2" class="outline-4">
+<h4 id="orgfe3e5c2">LibAnswers Changes</h4>
+<div class="outline-text-4" id="text-orgfe3e5c2">
 <ul class="org-ul">
 <li>Updated the SMS auto-responder to reflect current open hours, and
 modified the automatic response to redirect users to the Hours page.</li>
@@ -371,13 +368,13 @@ modified the automatic response to redirect users to the Hours page.</li>
 </div>
 </div>
 
-<div id="outline-container-org7471f79" class="outline-3">
-<h3 id="org7471f79">2020-08-31</h3>
-<div class="outline-text-3" id="text-org7471f79">
+<div id="outline-container-orge5b8ad6" class="outline-3">
+<h3 id="orge5b8ad6">2020-08-31</h3>
+<div class="outline-text-3" id="text-orge5b8ad6">
 </div>
-<div id="outline-container-org39aca3f" class="outline-4">
-<h4 id="org39aca3f">Databases A to Z Changes</h4>
-<div class="outline-text-4" id="text-org39aca3f">
+<div id="outline-container-org9dd8713" class="outline-4">
+<h4 id="org9dd8713">Databases A to Z Changes</h4>
+<div class="outline-text-4" id="text-org9dd8713">
 <ul class="org-ul">
 <li>APA Academic Writer renamed Academic Writer</li>
 </ul>
@@ -385,13 +382,13 @@ modified the automatic response to redirect users to the Hours page.</li>
 </div>
 </div>
 
-<div id="outline-container-org0e53274" class="outline-3">
-<h3 id="org0e53274">2020-08-28</h3>
-<div class="outline-text-3" id="text-org0e53274">
+<div id="outline-container-orgf100ef3" class="outline-3">
+<h3 id="orgf100ef3">2020-08-28</h3>
+<div class="outline-text-3" id="text-orgf100ef3">
 </div>
-<div id="outline-container-org5306652" class="outline-4">
-<h4 id="org5306652">ILL to Article Request Service Changeover</h4>
-<div class="outline-text-4" id="text-org5306652">
+<div id="outline-container-org5f7f95d" class="outline-4">
+<h4 id="org5f7f95d">ILL to Article Request Service Changeover</h4>
+<div class="outline-text-4" id="text-org5f7f95d">
 <ul class="org-ul">
 <li>"Request an Article" button on library homepage renamed "Article Request"</li>
 <li>"Article Request Service" page activated</li>
@@ -400,9 +397,9 @@ modified the automatic response to redirect users to the Hours page.</li>
 </div>
 </div>
 
-<div id="outline-container-orgde3a7b9" class="outline-4">
-<h4 id="orgde3a7b9">APA Resources Removed</h4>
-<div class="outline-text-4" id="text-orgde3a7b9">
+<div id="outline-container-org50bffb4" class="outline-4">
+<h4 id="org50bffb4">APA Resources Removed</h4>
+<div class="outline-text-4" id="text-org50bffb4">
 <ul class="org-ul">
 <li>APA 7th Edition page decomissioned, and redirected to "Citing Library Sources" guide</li>
 <li>"Citing Library Sources" link removed from page headers</li>
@@ -410,9 +407,9 @@ modified the automatic response to redirect users to the Hours page.</li>
 </div>
 </div>
 
-<div id="outline-container-orgb138039" class="outline-4">
-<h4 id="orgb138039">Chat Tab Changes</h4>
-<div class="outline-text-4" id="text-orgb138039">
+<div id="outline-container-org8828df3" class="outline-4">
+<h4 id="org8828df3">Chat Tab Changes</h4>
+<div class="outline-text-4" id="text-org8828df3">
 <ul class="org-ul">
 <li>Degree Path now a separate drop-down menu</li>
 <li>Removed APA notice</li>
@@ -422,9 +419,9 @@ modified the automatic response to redirect users to the Hours page.</li>
 </div>
 </div>
 
-<div id="outline-container-orge956bc6" class="outline-4">
-<h4 id="orge956bc6">Guest Sites</h4>
-<div class="outline-text-4" id="text-orge956bc6">
+<div id="outline-container-org3c72bd2" class="outline-4">
+<h4 id="org3c72bd2">Guest Sites</h4>
+<div class="outline-text-4" id="text-org3c72bd2">
 <ul class="org-ul">
 <li>Center for Faculty Excellence guides and group deleted</li>
 <li>National Committee guides guides and group deleted</li>
@@ -435,8 +432,8 @@ modified the automatic response to redirect users to the Hours page.</li>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2020-09-22 Tue 16:39</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2020-10-20 Tue 09:22</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
